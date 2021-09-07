@@ -1,4 +1,5 @@
 import re
+
 """
 6. Вводимо стрічку довільної довжини. Підрахувати: 1) кількість чисел 2)
 кількість слів, які починаються з великої букви у даній стрічці.
@@ -28,8 +29,8 @@ import re
 вивести його.
 """
 # square = []
-# for i in range(1,1001):
-#     if ((i*i)%10) == 4:
+# for i in range(1, 1025):
+#     if ((i * i) % 10) == 4 and (i * i) // 100 == 0:
 #         square.append(i)
 # print(*square)
 """
@@ -56,9 +57,11 @@ import re
 #     print(z)
 #
 # нумерованный список
-def print_everything(*args):
-    for count, thing in enumerate(args):
-        #print('{0}. {1}'.format(count, thing))
-        print(f'{count}. {thing}')
+# def print_everything(*args):
+#     for count, thing in enumerate(args):
+#         #print('{0}. {1}'.format(count, thing))
+#         print(f'{count}. {thing}')
+#
+# print_everything('apple', 'banana', 'cabbage', 'pears')
 
-print_everything('apple', 'banana', 'cabbage', 'pears')
+print(10%3)

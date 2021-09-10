@@ -16,11 +16,11 @@
 8.1. Поменяйте в каждом предложении текста первое слово с последним.
 '''
 s = "Hello.I'm so happy to see you."
-with open('text.txt','w') as myfile:
+with open('text.txt', 'w') as myfile:
     myfile.write(s)
 
-with open('text.txt','r') as myfile:
-    #lst = s.split() ["Hello.I'm", 'so', 'happy', 'to', 'see', 'you.']
+with open('text.txt', 'r') as myfile:
+    #lst = s.split() ["Hello.I'm", 'so', 'happy', 'to', 'see', 'you.'] #split() возвращает список строк.
     lst = s.replace('.', '').split() #["HelloI'm", 'so', 'happy', 'to', 'see', 'you']
     print(lst)
     lst[0],lst[-1]=lst[-1],lst[0]

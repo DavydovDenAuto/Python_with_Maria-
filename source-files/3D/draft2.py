@@ -53,4 +53,12 @@ print(1%5)
 # cities = ['kyiv', 'kharkiv', 'bremen', 'paris', 'rome']
 # A = [city.title() for city in cities if len(city) < 5]
 # print(A) #['Kyiv', 'Rome']
-
+list_22 = [1,3,5,6,0,205]
+list_compr = [item+100 for item in list_22 if item%2==1]
+print(list_compr)
+list_33 = []
+for i in list_22:
+    i+=100
+    if i%2 == 1:
+        list_33.append(i)
+print(list_33)

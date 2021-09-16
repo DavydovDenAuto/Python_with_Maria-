@@ -86,3 +86,8 @@ person_name = [person['name'] for group in users_groups for person in group]
 print(person_name)
 person_age_less30 = [person['name'] for group in users_groups for person in group if person['age'] < 30]
 print(person_age_less30)
+
+qwer = {'Legacy Educator': {'User': 'legacy_educator_subscr@gmail.com', 'Password': 'Sepultura1@#'}}
+print(qwer)
+list_qwer = [q for person in qwer for person['password'.lower()] in person]
+print(list_qwer)

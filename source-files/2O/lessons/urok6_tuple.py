@@ -7,7 +7,8 @@ print(user)
 user = "Jim", 45
 print(user)
 # кортеж из одного элемента требует запятую после него
-user = ("Tom",)
+user122 = ("Tom",)
+print('user122: ',user122)
 # создание кортежа из списка
 users_list = ["Tom", "Bob", "Kate"]
 users_tuple = tuple(users_list)
@@ -122,7 +123,9 @@ print(users3)  # {"Tom", "Alice"}
 print(users - users2)  # {"Tom", "Alice"}
 # является ли множество подмножеством (т.е. частью) другого множества
 # set.issubset(other) или set <= other - все элементы set принадлежат other
-users = {"Tom", "Bob", "Alice"}
+users = {"Tom", "Bob", "Alice",'Tom'}
+print(users)
+print('type = ',type(users))
 superusers = {"Sam", "Tom", "Bob", "Alice", "Greg"}
 print(users.issubset(superusers))  # True
 print(superusers.issubset(users))  # False
@@ -141,3 +144,11 @@ print("проверка users == f ", users == f)  # True
 # f[0] = "Dan" #TypeError: 'tuple' object does not support item assignment
 list_users = list(users)  # ["Tom", "Bob", "Alice"]
 print("проверка users == list_users ", users == list_users)  # False
+print('------------------')
+users_tuple = ("Tom", "Bob", "Sam", "Kate")
+print(users_tuple[0],users_tuple[-1],users_tuple[-2])
+users_list = ["Tom", "Bob", "Sam", "Kate"]
+print(users_list[0])
+users_dict = {'name':'vasia','age':24}
+for k,v in users_dict:
+    print(v)

@@ -1,10 +1,1 @@
-
-	 Hi Den
-	 Hi Den
-	 Hi Den
-	 Hi Den
-	 Hi Den
- string 3
-
-	 Hi Den
- string 3
+hello world

@@ -15,13 +15,20 @@ class Person:
     def function_2(self):
         print(self.address)
 
+object_1 = Person()
+object_1.display_info()
+print('----------------------------------------------------')
+
+
+
+
 
 # при вызове метода в основной программе self не пишут
 person1 = Person()  # конструктор по умолчанию, () - так вызывается конструктор/метод класса
 print(type(person1))
 val = 5
 print(type(2))
-if type(2)!=type(val):
+if type(2)==type(val):
     print(2,'=целое число')
 person1.display_info()  # Привет, меня зовут Tom
 person2 = Person()
@@ -33,7 +40,8 @@ person2.display_info()  # Привет, меня зовут Sam
 class Person2:
     # конструктор, он сам добавит атрибут self.name
     def __init__(self, name):
-        self.name = name  # устанавливаем имя, __спереди и сзади - это показатель что эти методы есть в Object,_-protected,__-private
+        self.name = name  # устанавливаем имя, __спереди и сзади - это показатель что эти методы есть в Object,
+        # _-protected,__-private
         #protected - доступен классу и его наследникам
         # self.name будет существовать пока существует объект
         # def __init__(self, name) name будет существовать до конца функции

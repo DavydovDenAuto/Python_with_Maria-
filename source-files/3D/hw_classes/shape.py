@@ -10,10 +10,36 @@ http://code.mu/ru/php/book/oop/abstract-classes/
 class Shape:
     def get_perim(self):
         pass
-    def get_square(self):
+    def get_area(self):
         pass
 
 class Square(Shape):
     def __init__(self,a):
+        self.a = a
+
+    def get_area(self):
+        return self.a**2
+
+    def get_perim(self):
+        return self.a*4
+
+
+class Triangle(Square):
+
+    def get_perim(self,a,b,c):
         self.__a = a
+        self.__b = b
+        self.__c = c
+
+square = Square(5)
+square_perim = square.get_perim()
+square_area = square.get_area()
+print(square_area,square_perim)
+
+
+
+
+
+
+
 

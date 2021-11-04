@@ -56,7 +56,7 @@ def delete_item(name):
         filter(lambda i_x: i_x[1]['name'] == name, enumerate(items)))
     if idxs_items:
         i, item_to_delete = idxs_items[0][0], idxs_items[0][1]
-        del items[i]
+        del items[i] #items.remove(i)
     else:
         raise mvc_exc.ItemNotStored(
             'Can\'t delete "{}" because it\'s not stored'.format(name))

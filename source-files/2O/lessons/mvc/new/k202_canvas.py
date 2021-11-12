@@ -18,7 +18,9 @@ def random_rectangle(width, height, fill_color):
 random_rectangle(400, 400, 'red')
 random_rectangle(400, 400, '#ffd800')
 my_color = colorchooser.askcolor() # ((0.0, 255.99609375, 0.0), '#00ff00')
+print(my_color)
 random_rectangle(400, 400, my_color[1])
+
 
 # дуга (координаты углов прямоугольника, в который вписана,
 # extent = угол разворота дуги в градусах от Ox против часовой стрелки
@@ -47,3 +49,5 @@ canvas.create_text(400, 200, text="Hello World,\nPython\nand Tk",
                 anchor=SW, fill="green")
 #ellips
 canvas.create_oval(10, 10, 25, 25)
+
+tk.mainloop()

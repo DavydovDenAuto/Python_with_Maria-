@@ -42,3 +42,4 @@ canvas.bind_all('<KeyPress-Down>', movetriangle)
 canvas.bind_all('<KeyPress-Left>', movetriangle)
 canvas.bind_all('<KeyPress-Right>', movetriangle)
     
+tk.mainloop()
